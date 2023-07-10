@@ -13,13 +13,18 @@ const Home = () => {
         >
             <motion.h1 
                 className="text-[70px] mb-16"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ x: -500 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.5 }}
             >
                 Welcome to Bruce Website
             </motion.h1>
             <Link to="/base">
-                <button className="text-white rounded-full border-2 border-slate-100 px-12 cursor-pointer text-[50px]">Click</button>
+                <motion.button 
+                    className="text-white rounded-full border-2 border-slate-100 px-12 cursor-pointer text-[50px]"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >Click</motion.button>
             </Link>
         </div>
     )
