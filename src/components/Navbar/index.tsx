@@ -13,9 +13,8 @@ const Navbar = () => {
             <BanknotesIcon className="h-16 w-16 text-white flex items-center justify-center"/>
             <motion.h1 
                 className="flex w-32 text-3xl items-center justify-center"
-                animate={{
-                    y: -10
-                }}
+                initial={{ y: -250 }}
+                animate={{ y: -10 }}
             >
                 Bruce
             </motion.h1>
