@@ -23,7 +23,9 @@ const Home = () => {
                 <motion.button 
                     className="text-white rounded-full border-2 border-slate-100 px-12 cursor-pointer text-[50px]"
                     whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10, duration: 0.5 }}
+                    initial={{ x: -500 }}
+                    animate={{ x: 0 }}
                 >Click</motion.button>
             </Link>
         </div>

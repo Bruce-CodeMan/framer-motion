@@ -5,14 +5,26 @@
  */
 
 import { BanknotesIcon } from "@heroicons/react/24/solid"
-import { motion } from "framer-motion"
+import { motion, useTime, useTransform } from "framer-motion"
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
+
+    const time = useTime()
+    const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false })
+
     return (
         <div className="flex w-full py-6 px-6 fixed">
             <Link to="/">
-                <BanknotesIcon className="h-16 w-16 text-white flex items-center justify-center"/>
+                <motion.div
+                    style={{ rotate }}
+                >
+                    <BanknotesIcon 
+                        className="h-16 w-16 text-white flex items-center justify-center"
+                        
+                    />
+                </motion.div>
+                
             </Link>
             
             <motion.h1 
