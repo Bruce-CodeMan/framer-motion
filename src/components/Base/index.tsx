@@ -38,11 +38,21 @@ const Base = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    hidden: { opacity: 0, y: -300 },
-                    visible: { opacity: 1, y: -100 }
+                    hidden: { opacity: 0, x: -500, y: -100},
+                    visible: { opacity: 1, y: -100, x: 0 }
                 }}
             >Step 1: Choose Your Base</motion.h3>
-            <div className="w-2/6 mx-auto">
+            <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x: 500},
+                    visible: { opacity: 1, x: 0 }
+                }}
+                className="w-2/6 mx-auto"
+            >
                 <RadioGroup>
                     {plans.map(plan => (
                         <RadioGroup.Option
@@ -98,7 +108,7 @@ const Base = () => {
                         </RadioGroup.Option>
                     ))}
                 </RadioGroup>
-            </div>
+            </motion.div>
         </div>
     )
 }

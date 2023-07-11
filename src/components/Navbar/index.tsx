@@ -34,6 +34,7 @@ const Navbar = () => {
             >
                 Bruce
             </motion.h1>
+            
         </div>
     )
 }

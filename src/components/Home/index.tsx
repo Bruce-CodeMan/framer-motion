@@ -12,7 +12,7 @@ const Home = () => {
             className="w-full h-full flex flex-col items-center justify-center"
         >
             <motion.h1 
-                className="text-[70px] mb-16"
+                className="text-[70px] mb-16 font-extrabold text-transparent bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text"
                 initial={{ x: -500 }}
                 animate={{ x: 0 }}
                 transition={{ duration: 0.5 }}
