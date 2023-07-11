@@ -110,7 +110,7 @@ const Base = () => {
                     ))}
                 </RadioGroup>
             </motion.div>
-            <Link to="/base">
+            <Link to="/content">
                 <motion.button 
                     className="text-white rounded-full border-2 border-slate-100 px-12 cursor-pointer text-[50px] mt-8"
                     whileHover={{ scale: 1.1 }}

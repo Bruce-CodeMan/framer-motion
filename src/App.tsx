@@ -9,7 +9,8 @@ import { useState } from "react";
 
 import Navbar from "@/components/Navbar"
 import Home from "@/components/Home";
-import Base from "./components/Base";
+import Base from "@/components/Base";
+import Content from "@/components/Content";
 
 const App = () => {
 
@@ -35,8 +36,9 @@ const App = () => {
     >
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/base" element={<Base pizza={pizza} addBase={addBase}/>}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="/base" element={<Base />}/>
+        <Route path="/content" element={<Content />} />
       </Routes>
     </div>
   )
