@@ -5,6 +5,7 @@
  */
 import { motion } from "framer-motion"
 import { RadioGroup } from "@headlessui/react"
+import { Link } from "react-router-dom"
 
 const plans = [
     {
@@ -109,6 +110,15 @@ const Base = () => {
                     ))}
                 </RadioGroup>
             </motion.div>
+            <Link to="/base">
+                <motion.button 
+                    className="text-white rounded-full border-2 border-slate-100 px-12 cursor-pointer text-[50px] mt-8"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10, duration: 0.5 }}
+                    initial={{ y: 100 }}
+                    animate={{ y: 0 }}
+                >Click</motion.button>
+            </Link>
         </div>
     )
 }
