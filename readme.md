@@ -23,3 +23,5 @@ To learn more.take a look at the following resources:
 - [Learn ReactJs](https://zh-hans.react.dev/) - learn about the grammer 
 - [Tailwindcss](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
 - [HeadlessUI/React](https://headlessui.com/) - Designed to integrate beautifully with Tailwind CSS
+- [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS
+
