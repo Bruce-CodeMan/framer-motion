@@ -25,3 +25,5 @@ To learn more.take a look at the following resources:
 - [HeadlessUI/React](https://headlessui.com/) - Designed to integrate beautifully with Tailwind CSS
 - [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS
 
+<img src="./images/base.png">
+
