@@ -22,3 +22,4 @@ To learn more.take a look at the following resources:
 - [Framer-motion](https://www.framer.com/motion/) - learn about Framer and 3D animate
 - [Learn ReactJs](https://zh-hans.react.dev/) - learn about the grammer 
 - [Tailwindcss](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
+- [HeadlessUI/React](https://headlessui.com/) - Designed to integrate beautifully with Tailwind CSS
