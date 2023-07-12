@@ -5,3 +5,5 @@
 -->
 ## React + Tailwindcss + Framer-motion
 
+<img src="./images/home.png">
+
