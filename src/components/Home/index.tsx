@@ -28,6 +28,16 @@ const Home = () => {
                     animate={{ opacity: 1 }}
                 >Click</motion.button>
             </Link>
+
+            <Link to="/result">
+                <motion.button 
+                    className="text-white rounded-full border-2 border-slate-100 px-12 cursor-pointer text-[50px] mt-8"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10, duration: 1.5 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                >Result</motion.button>
+            </Link>
         </div>
     )
 }
